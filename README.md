@@ -6,4 +6,5 @@
   </a>
 </p>
 
+[![GitHub Streak](https://streak-stats.demolab.com?user=krittin-58&theme=vue&hide_border=true)](https://git.io/streak-stats)
 [![@copterdotjs's Holopin board](https://holopin.io/api/user/board?user=copterdotjs)](https://holopin.io/@copterdotjs)
