@@ -16,6 +16,15 @@
 
 ---
 
+### 🎯 Hobby Projects
+
+- [countdown-html](https://github.com/krittin-58/countdown-html) — Full-screen countdown timer with no build step or dependencies
+- [iss-tracker-vue](https://github.com/krittin-58/iss-tracker-vue) — Real-time ISS tracker built with Vue
+- [omdb-api-vue](https://github.com/krittin-58/omdb-api-vue) — Movie search app powered by the OMDb API
+- [my-portfolio-nuxt-studio](https://github.com/krittin-58/my-portfolio-nuxt-studio) — Lightweight Nuxt portfolio theme
+
+---
+
 ### 🛠️ Tech Stack
 
 **Languages**
