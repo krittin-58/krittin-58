@@ -66,11 +66,66 @@ Developed a crowdsourced map for reporting and managing stray-cat sightings.
 
 ---
 
+### [Game Icons Memory](https://game-icons-memory.vercel.app/) — Icon Quiz & Memory Game
+**Tech:** `Nuxt 3` `TypeScript` `Neon (PostgreSQL)` `Tailwind CSS` `Vitest`
+
+Built a tech-logo quiz and memory game backed by a global leaderboard and an admin-managed question catalog.
+
+- Two game modes: 10-question 4-choice icon quiz and memory boards from **3x3 to 6x6**
+- Added auth, user profiles, and an admin panel for question sets, users, and event logs
+- Automated icon-catalog sync (~1,400 logos) from upstream sources with a CI-friendly `--check` mode
+- Covered game logic and server stores with **16 Vitest suites**
+
+> Impact: Add engagement metrics here (e.g., runs played, leaderboard submissions, returning players)
+
+---
+
+### [ServicePulse](https://servicepulse.fun) — Uptime & Status Monitoring SaaS
+**Tech:** `Nuxt 4` `TypeScript` `Express 5` `Neon (PostgreSQL)` `Tailwind CSS`
+
+Built a full-stack uptime monitoring service with per-user isolation and scheduled health checks.
+
+- Implemented **JWT auth** with HTTP-only cookies, session expiration, and rate limiting
+- Added **multi-region checks from 4 regions** with per-service intervals (1–1440 min)
+- Built webhook notifications on status change plus a filterable, paginated log viewer
+- Split the stack into a Nuxt frontend and an Express API with analytics, billing, and public status-page routes
+
+> Impact: Add operational metrics here (e.g., monitored endpoints, checks/day, alert delivery latency)
+
+---
+
+### [Steam Intelligent](https://steam-intelligent.vercel.app/) — Steam Library & Achievement Analytics
+**Tech:** `Nuxt 4` `TypeScript` `Nuxt UI v4` `Tailwind CSS v4` `Pinia`
+
+Built an SSR analytics app that turns a Steam library into playtime and achievement insights.
+
+- Implemented **Steam OpenID login** with encrypted sessions and server-side refresh middleware
+- Aggregated library, playtime, and achievement data into dashboard, library, and insights views
+- Prebuilt the SteamSpy genre catalog at build time so **nothing is fetched from SteamSpy at request time**
+- Covered the API and view layers with **28 Vitest suites** (unit + Nuxt runtime)
+
+> Impact: Add usage metrics here (e.g., linked Steam accounts, libraries analyzed, cache hit rate)
+
+---
+
+### [Launch Tracker](https://space-x-mu-eight.vercel.app/) — Orbital Launch Dashboard
+**Tech:** `Vue 3` `Vite` `Vuetify 3` `Cypress`
+
+Built a launch dashboard over **The Space Devs Launch Library 2** covering launches, rockets, crew, spacecraft, pads, and agencies.
+
+- Designed a caching layer around a **~15 requests/hour** public API: `localStorage` cache, in-flight request de-duplication, and a manual cache-busting refresh
+- Handled **HTTP 429** with `Retry-After`-aware backoff and stale-cache fallback so the UI keeps rendering
+- Built 11 routed views with detail pages and end-to-end coverage in Cypress
+
+> Impact: Add usage metrics here (e.g., sessions, cache hit rate, API calls saved)
+
+---
+
 ## 🧪 More Projects
 
-- [SpaceX Launch Tracker](https://space-x-mu-eight.vercel.app/) — Realtime launch dashboard (`Vue`, `Vuetify`)
 - [Dealhunt](https://dealhunt.today) — Game price comparison app (`Vue`, `Nuxt`, `CheapShark API`)
 - [Countdown Timer](https://countdown-html.vercel.app/) — Multi-timer and Pomodoro PWA (`Vanilla JS`, `Web Notifications API`)
+- [Easy Bed Management](https://easy-bed-management.vercel.app/) — Hospital bed/ward tracker with occupancy reporting, no build step (`Vanilla JS`, `CSS Variables`)
 
 ---
 
